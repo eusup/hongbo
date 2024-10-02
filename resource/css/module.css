@@ -3,7 +3,7 @@
   font-weight: 900;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-Black.woff2) format('woff2');
+    url(../fonts/Pretendard-Black.woff2) format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-weight: 800;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-ExtraBold.woff2) format('woff2');
+    url(../fonts/Pretendard-ExtraBold.woff2) format('woff2');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-Bold.woff2) format('woff2');
+    url(../fonts/Pretendard-Bold.woff2) format('woff2');
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-weight: 600;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-SemiBold.woff2) format('woff2');
+    url(../fonts/Pretendard-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-weight: 500;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-Medium.woff2) format('woff2');
+    url(../fonts/Pretendard-Medium.woff2) format('woff2');
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-Regular.woff2) format('woff2');
+    url(../fonts/Pretendard-Regular.woff2) format('woff2');
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   font-weight: 300;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-Light.woff2) format('woff2');
+    url(../fonts/Pretendard-Light.woff2) format('woff2');
 }
 
 @font-face {
@@ -59,7 +59,7 @@
   font-weight: 200;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-ExtraLight.woff2) format('woff2');
+    url(../fonts/Pretendard-ExtraLight.woff2) format('woff2');
 }
 
 @font-face {
@@ -67,7 +67,7 @@
   font-weight: 100;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Pretendard-Thin.woff2) format('woff2');
+    url(../fonts/Pretendard-Thin.woff2) format('woff2');
 }
 
 @font-face {
@@ -75,7 +75,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Paperlogy-4Regular.ttf) format('truetype');
+    url(../fonts/Paperlogy-4Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -83,7 +83,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('※'),
-    url(/resource/fonts/Paperlogy-7Bold.ttf) format('truetype');
+    url(../fonts/Paperlogy-7Bold.ttf) format('truetype');
 }
 
 * {
@@ -188,7 +188,7 @@ section {
     right: 0;
     width: 200px;
     height: 200px;
-    background-image: url(/resource/images/img-whiote-piece.svg);
+    background-image: url(../images/img-whiote-piece.svg);
   }
 }
 
@@ -236,7 +236,7 @@ h2 p.g-title {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/resource/images/bg.svg);
+    background-image: url(../images/bg.svg);
     background-position: top;
     background-repeat: no-repeat;
     z-index: 0;
@@ -295,7 +295,7 @@ h2 p.g-title {
     right: 100%;
     width: 160px;
     height: 160px;
-    background-image: url(/resource/images/line.svg);
+    background-image: url(../images/line.svg);
   }
 
   &:last-child::before {
@@ -305,7 +305,7 @@ h2 p.g-title {
     left: 100%;
     width: 160px;
     height: 160px;
-    background-image: url(/resource/images/line.svg);
+    background-image: url(../images/line.svg);
   }
 }
 
@@ -442,7 +442,7 @@ h2 p.g-title {
 
 .section02 {
   position: relative;
-  background-image: url(/resource/images/section02-bg.png);
+  background-image: url(../images/section02-bg.png);
   color: #ffffff;
 
   &::before {
@@ -542,7 +542,7 @@ h2 p.g-title {
     left: 50%;
     width: 60px;
     height: 60px;
-    background-image: url(/resource/images/icn-check.svg);
+    background-image: url(../images/icn-check.svg);
   }
 }
 
