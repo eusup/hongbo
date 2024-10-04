@@ -510,6 +510,10 @@ h2 p.g-title {
   height: 58px;
 }
 
+.section03{
+  padding: 160px 0;
+}
+
 .section03 .con {
   display: flex;
   flex-direction: column;
@@ -518,8 +522,9 @@ h2 p.g-title {
 }
 
 .section03 .title {
+  position: relative;
   display: inline-block;
-  margin-bottom: 54px;
+  margin-bottom: -36px;
   font-size: 4.2rem;
   line-height: 1;
   padding: 4px;
@@ -530,7 +535,7 @@ h2 p.g-title {
 .section03 .title p {
   position: relative;
   padding: 20px;
-  padding-top: 40px;
+  padding-top: 30px;
   border-radius: 26px;
   background: linear-gradient(180deg, #CDEBC2 0%, #B7F4A2 99.5%);
   box-shadow: 0px 0px 10px 0px #D9F3D0;
@@ -539,39 +544,48 @@ h2 p.g-title {
     content: "";
     position: absolute;
     transform: translateX(-50%);
-    top: -30px;
+    top: -20px;
     left: 50%;
-    width: 60px;
-    height: 60px;
+    width: 42px;
+    height: 42px;
     background-image: url(../images/icn-check.svg);
+    background-position: center;
+    background-size: 100%;
+  }
+
+  & br {
+    display: none;
   }
 }
 
 .section03 ul {
-  gap: 48px;
+  flex-wrap: wrap;
+  gap: 0;
+  border-radius: 20px;
+  border: 2px solid #dddddd;
 }
 
-.section03 ul li {
-  position: relative;
-  width: 100%;
+.section03 ul li{
+  align-content: center;
+  width: 50%;
+  height: 142px;
+  padding: 20px;
   font-size: 2.4rem;
   text-align: center;
-  word-break: keep-all;
 
-  &::before {
-    content: "";
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: -24px;
-    width: 1px;
-    height: 70px;
-    background-color: #DDDDDD;
+  &:nth-child(-n + 2){
+    padding-top: 42px;
+    border-bottom: 2px solid #ddd;
   }
 
-  &:last-child::before {
+  &:nth-child(odd){
+    border-right: 2px solid #ddd;
+  }
+
+  &::before{
     display: none;
   }
+
 }
 
 .section04 {
@@ -875,6 +889,10 @@ h2 p.g-title {
   line-height: 1.2;
 }
 
+.section06 .title p br.hidden{
+  display: none;
+}
+
 .section06 .btn {
   max-width: 40%;
   background: linear-gradient(#001165, #520073);
@@ -1036,33 +1054,6 @@ h2 p.g-title {
   .section02 ul li .thumb img {
     width: 42px;
     height: 42px;
-  }
-
-  .section03 .title {
-    margin-bottom: 24px;
-    border-radius: 20px;
-    font-size: 3.6rem;
-  }
-
-  .section03 .title p {
-    padding: 24px;
-    padding-bottom: 10px;
-    border-radius: 18px;
-
-    &::before {
-      top: -15px;
-      width: 32px;
-      height: 32px;
-      background-size: 100%;
-    }
-  }
-
-  .section03 ul {
-    gap: 20px;
-  }
-
-  .section03 ul li::before{
-    right: -10px;
   }
 
   .section04 .title,
@@ -1321,32 +1312,61 @@ h2 p.g-title {
   .section02 ul li p {
     width: 100%;
     text-align: left;
-  }
-
-  .section02 ul li p br {
-    display: none;
-  }
-
-  .section03 ul {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .section03 ul li {
-    padding: 24px 0;
-    border-bottom: 1px solid #ddd;
-
-    &:first-child {
-      border-top: 1px solid #ddd;
-    }
-
-    &::before {
+    & br{
       display: none;
     }
   }
 
-  .section03 ul li br {
-    display: none;
+  .section03{
+    padding: 100px 0;
+  }
+
+  .section03 .title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .section03 .title p{
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .section03 ul{
+    flex-direction: column;
+    border: 1px solid #dddddd;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .section03 ul li{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dddddd;
+
+    &:nth-child(-n + 2){
+      padding-top: 20px;
+      border-bottom: 1px solid #dddddd;
+    }
+  
+    &:nth-child(odd){
+      border-right: none;
+    }
+
+    &:last-child{
+      border: none;
+    }
+
+    & br{
+      display: none;
+    }
   }
 
   .section04 ul.flex {
@@ -1497,6 +1517,10 @@ h2 p.g-title {
     }
   }
 
+  .section06 .title p br.hidden{
+    display: block;
+  }
+
   .section07 .con {
     gap: 30px;
     padding: 0;
@@ -1536,7 +1560,8 @@ h2 p.g-title {
     margin-bottom: 36px;
     font-size: 2rem;
     line-height: 1;
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -1545,11 +1570,15 @@ h2 p.g-title {
   .section01 .schedule ul li div.time {
     width: auto;
   }
+
+  .section03 .title p br{
+    display: block;
+  }
 }
 
 @media screen and (max-width : 650px) {
 
-  h2{
+  h2 {
     font-size: 6.4rem;
   }
 
@@ -1557,19 +1586,19 @@ h2 p.g-title {
   .section02 .title p.small,
   .section04 .title .text,
   .section04 .title,
-  .section05 .title{
+  .section05 .title {
     font-size: 2.8rem;
   }
 
   .section01 h3 span b,
-  .section02 .title p{
+  .section02 .title p {
     font-size: 4.2rem;
   }
 
   .section02 ul li,
   .section03 ul li,
   .section04 .inner-text,
-  .section04 .box ul{
+  .section04 .box ul {
     font-size: 2rem;
   }
 
@@ -1578,12 +1607,8 @@ h2 p.g-title {
     background-color: rgba(0, 74, 126, 0.8);
   }
 
-  .section03 .title {
-    border-radius: 10px;
-  }
-
-  .section03 .title p {
-    border-radius: 6px;
+  .section03 ul li br{
+    display: block;
   }
 
 }
@@ -1628,11 +1653,11 @@ h2 p.g-title {
   .section04 .inner-text,
   .section04 .box ul,
   .section05 .list ul li .flex,
-  .section05 .list ul.alert-wrap li{
+  .section05 .list ul.alert-wrap li {
     font-size: 1.6rem;
   }
 
-  .section04 .tag{
+  .section04 .tag {
     font-size: 1.4rem;
   }
 
@@ -1736,14 +1761,22 @@ h2 p.g-title {
     height: 24px;
   }
 
+  .section03{
+    padding: 64px 0;
+  }
+
   .section03 .title {
-    margin-bottom: 24px;
+    display: block;
+    width: 100%;
   }
 
   .section03 .title p {
-    padding: 12px;
-    padding-top: 22px;
-    font-size: 1.8rem;
+    padding: 8px;
+    padding-top: 18px;
+    font-size: 2.4rem;
+    &::before{
+      display: none;
+    }
   }
 
   .section03 ul li {
@@ -1868,5 +1901,15 @@ h2 p.g-title {
 
   .section07 .caption + p {
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width : 340px) {
+  .section03 .title p {
+    width: 100%;
+    line-height: 1.4;
+    & br{
+      display: block;
+    }
   }
 }
