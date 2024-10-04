@@ -1180,7 +1180,7 @@ h2 p.g-title {
 
   button,
   .btn {
-    padding: 24px 0;
+    padding: 24px 42px;
     font-size: 3.2rem;
   }
 
@@ -1590,7 +1590,7 @@ h2 p.g-title {
 
 @media screen and (max-width : 510px) {
   section {
-    padding: 36px 0;
+    padding: 64px 0;
   }
 
   section.edge::after {
