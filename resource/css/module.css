@@ -1623,6 +1623,7 @@ h2 p.g-title {
 
   .section01 .people-wrap .info ul li,
   .section01 .schedule ul li,
+  .section02 ul li,
   .section03 ul li,
   .section04 .inner-text,
   .section04 .box ul,
@@ -1721,6 +1722,7 @@ h2 p.g-title {
   }
 
   .section02 ul li {
+    font-size: 1.6rem;
     gap: 4px;
   }
 
