@@ -365,7 +365,7 @@ h2 p.g-title {
 .section01 h3 {
   position: relative;
   margin-top: 50px;
-  margin-bottom: 36px;
+  margin-bottom: 50px;
   padding-top: 50px;
   font-family: 'Paperlogy';
   font-size: 6.4rem;
@@ -389,23 +389,25 @@ h2 p.g-title {
 }
 
 .section01 .btn {
-  margin-bottom: 50px;
+  max-width: 40%;
+  margin-bottom: 84px;
   border-radius: 100px;
   background: linear-gradient(221deg, #A9FF53 0%, #7EFF9A 53.81%);
+  color: var(--color-font);
 }
 
-.section01 .schedule{
+.section01 .schedule {
   gap: 30px;
   max-width: 1280px;
   margin: 0 auto;
   padding: 36px;
   border-radius: 40px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background-color: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   font-size: 2.4rem;
 }
 
-.section01 .schedule > p{
+.section01 .schedule > p {
   padding-right: 30px;
   border-right: 1px solid #ffffff;
   line-height: 1;
@@ -416,29 +418,28 @@ h2 p.g-title {
   width: 100%;
 }
 
-.section01 .schedule ul li{
+.section01 .schedule ul li {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.section01 .schedule ul li div{
+.section01 .schedule ul li div {
   width: auto;
   gap: 4px;
 }
 
-.section01 .schedule ul li div.pin{
+.section01 .schedule ul li div.pin {
   flex-shrink: 0;
   justify-content: space-between;
   width: 145px;
 }
 
-.section01 .schedule ul li div.time{
+.section01 .schedule ul li div.time {
   flex-shrink: 0;
   justify-content: space-between;
   width: 252px;
 }
-
 
 .section02 {
   position: relative;
@@ -459,14 +460,14 @@ h2 p.g-title {
 
 .section02 .title {
   font-weight: 400;
-  font-size: 7.2rem;
+  font-size: 6.4rem;
   text-align: center;
   line-height: 1.2;
   margin-bottom: 54px;
 }
 
 .section02 .title p.small {
-  font-size: 5.4rem;
+  font-size: 4.8rem;
   color: #CAE5FF;
 }
 
@@ -484,7 +485,7 @@ h2 p.g-title {
 .section02 ul li {
   width: 100%;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 
   &.yellow b {
     color: #FFEEC3;
@@ -553,7 +554,7 @@ h2 p.g-title {
 .section03 ul li {
   position: relative;
   width: 100%;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   text-align: center;
   word-break: keep-all;
 
@@ -739,6 +740,12 @@ h2 p.g-title {
   }
 }
 
+.section04 .btn {
+  max-width: 40%;
+  background-color: #ffffff;
+  color: var(--color-font);
+}
+
 .section04 .cta-info {
   margin-top: 14px;
   font-size: 2.4rem;
@@ -869,12 +876,15 @@ h2 p.g-title {
 }
 
 .section06 .btn {
-  background: linear-gradient(221deg, #A9FF53 0%, #7EFF9A 50%);
+  max-width: 40%;
+  background: linear-gradient(#001165, #520073);
+  color: #ffffff;
 }
 
 .section07 {
   padding: 20px 0;
-  border-top: 1px solid #DDDDDD;
+  background-color: #242424;
+  color: #ffffff;
 }
 
 .section07 .con {
@@ -926,10 +936,6 @@ h2 p.g-title {
 
 @media screen and (max-width : 1440px) {
 
-  .section03 ul li {
-    font-size: 2.4rem;
-  }
-
   .section07 {
     padding: 30px;
   }
@@ -952,6 +958,13 @@ h2 p.g-title {
   .btn {
     font-size: 3.6rem;
   }
+
+  .section01 .btn,
+  .section04 .btn,
+  .section06 .btn {
+    max-width: 860px;
+  }
+
 
   .section01 .copy {
     font-size: 2.8rem;
@@ -1013,7 +1026,6 @@ h2 p.g-title {
 
   .section02 ul li {
     width: 25%;
-    font-size: 1.8rem;
   }
 
   .section02 ul li .thumb {
@@ -1049,12 +1061,8 @@ h2 p.g-title {
     gap: 20px;
   }
 
-  .section03 ul li {
-    font-size: 1.8rem;
-
-    &::before {
-      right: -10px;
-    }
+  .section03 ul li::before{
+    right: -10px;
   }
 
   .section04 .title,
@@ -1084,12 +1092,8 @@ h2 p.g-title {
     font-size: 1.6rem;
   }
 
-  .section04 .inner-text {
-    font-size: 1.8rem;
-  }
-
   .section04 .teacher-name {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .section04 div.box {
@@ -1168,19 +1172,22 @@ h2 p.g-title {
 }
 
 @media screen and (max-width : 1024px) {
-  section {
-    padding: 54px 0;
-  }
 
   h2 {
     margin-bottom: 24px;
-    font-size: 5.4rem;
+    font-size: 8.4rem;
   }
 
   button,
   .btn {
-    padding: 18px 36px;
-    font-size: 2.8rem;
+    padding: 24px 0;
+    font-size: 3.2rem;
+  }
+
+  .section01 .btn,
+  .section04 .btn,
+  .section06 .btn {
+    max-width: 640px;
   }
 
   h2 p.small {
@@ -1188,8 +1195,9 @@ h2 p.g-title {
   }
 
   .section01 h3 {
-    margin-bottom: 28px;
-    font-size: 2.8rem;
+    margin: 64px 0;
+    padding-top: 64px;
+    font-size: 3.6rem;
   }
 
   .section01 h3 span {
@@ -1198,13 +1206,13 @@ h2 p.g-title {
 
   .section01 h3 span b {
     display: block;
-    font-size: 4.2rem;
+    font-size: 5.4rem;
   }
 
   .section01 .copy {
     gap: 8px;
-    margin-bottom: 54px;
-    font-size: 1.8rem;
+    margin-bottom: 104px;
+    font-size: 2.6rem;
   }
 
   .section01 .people-wrap {
@@ -1221,6 +1229,8 @@ h2 p.g-title {
     align-items: flex-start;
     gap: 24px;
     width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
     padding-bottom: 24px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
@@ -1233,7 +1243,6 @@ h2 p.g-title {
   .section01 .people-wrap .info ul li {
     margin-bottom: 0;
     padding-left: 12px;
-    font-size: 1.6rem;
 
     &::before {
       width: 8px;
@@ -1248,12 +1257,7 @@ h2 p.g-title {
 
   .section01 .people-wrap .info p {
     margin-bottom: 12px;
-    font-size: 2rem;
     text-align: left;
-  }
-
-  .section01 .people-wrap .info p small {
-    font-size: 1.6rem;
   }
 
   .section01 .people-wrap li img {
@@ -1263,43 +1267,34 @@ h2 p.g-title {
     border-radius: 100px;
   }
 
-  .section01 .schedule{
+  .section01 .schedule {
     gap: 18px;
     padding: 18px;
     border-radius: 20px;
-    font-size: 2rem;
   }
 
-  .section01 .schedule > p{
+  .section01 .schedule > p {
     padding-right: 18px;
     font-size: 2.8rem;
   }
 
-  .section01 .schedule ul li div.pin{
-    width: 122px;
-  }
-
-  .section01 .schedule ul li div.time{
-    width: 210px;
-  }
-
   .section02 .title {
-    margin-bottom: 24px;
+    margin-bottom: 54px;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
   }
 
   .section02 .title p {
-    font-size: 3.6rem;
+    font-size: 5.4rem;
   }
 
   .section02 .title p.small {
-    font-size: 2.4rem;
+    font-size: 3.6rem;
   }
 
   .section02 ul {
     flex-direction: column;
     gap: 14px;
     width: auto;
-    margin: 0 auto;
   }
 
   .section02 ul li {
@@ -1307,6 +1302,8 @@ h2 p.g-title {
     align-items: center;
     gap: 6px;
     width: 100%;
+    max-width: 526px;
+    margin: 0 auto;
   }
 
   .section02 ul li .thumb {
@@ -1330,10 +1327,6 @@ h2 p.g-title {
     display: none;
   }
 
-  .section03 .title p {
-    font-size: 2.4rem;
-  }
-
   .section03 ul {
     flex-direction: column;
     gap: 0;
@@ -1354,11 +1347,6 @@ h2 p.g-title {
 
   .section03 ul li br {
     display: none;
-  }
-
-  .section04 .title .text,
-  .section04 .title {
-    font-size: 1.8rem;
   }
 
   .section04 ul.flex {
@@ -1400,8 +1388,8 @@ h2 p.g-title {
   }
 
   .section04 img {
-    width: 104px;
-    height: 104px;
+    width: 110px;
+    height: 110px;
     border-radius: 100px;
     background-color: #000000;
   }
@@ -1410,22 +1398,12 @@ h2 p.g-title {
     width: 100%;
   }
 
-  .section04 .part {
-    font-size: 1.8rem;
-  }
-
-  .section04 .tag {
-    gap: 4px;
-    font-size: 1.3rem;
-  }
-
   .section04 .inner-text {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
 
   .section04 .teacher-name {
     padding: 0;
-    font-size: 1.4rem;
   }
 
   .section04 div.box {
@@ -1438,13 +1416,12 @@ h2 p.g-title {
   .section04 .box ul::before {
     top: 4px;
     left: 3px;
-    height: calc(100% - 30px);
+    height: calc(100% - 48px);
   }
 
   .section04 .box ul li {
     margin-bottom: 42px;
     padding-left: 16px;
-    font-size: 1.6rem;
 
     &::before {
       top: 4px;
@@ -1455,7 +1432,6 @@ h2 p.g-title {
 
   .section04 .box ul li .time {
     margin-bottom: 4px;
-    font-size: 1.6rem;
   }
 
   .section04 .box ul li p.flex {
@@ -1463,7 +1439,7 @@ h2 p.g-title {
   }
 
   .section04 .box ul li p.flex span {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .section05 .title {
@@ -1513,7 +1489,7 @@ h2 p.g-title {
   }
 
   .section06 .title {
-    margin-bottom: 20px;
+    margin-bottom: 54px;
     font-size: 3.2rem;
 
     &:first-child {
@@ -1540,38 +1516,62 @@ h2 p.g-title {
   }
 }
 
-@media screen and (max-width : 800px){
-  
-  .section01 .schedule{
+@media screen and (max-width : 800px) {
+
+  .section01 .schedule {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .section01 .schedule > p{
+  .section01 .schedule > p {
     padding-right: inherit;
     border-right: none;
   }
 
-  .section01 .schedule ul li{
+  .section01 .schedule ul li {
     gap: 4px;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 24px;
-    font-size: 1.6rem;
+    width: 100%;
+    margin-bottom: 36px;
+    font-size: 2rem;
     line-height: 1;
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
-  .section01 .schedule ul li div.pin{
-    width: 86px;
-    font-size: 1.4rem;
-  }
-
-  .section01 .schedule ul li div.time{
-    width: 170px;
+  .section01 .schedule ul li div.pin,
+  .section01 .schedule ul li div.time {
+    width: auto;
   }
 }
 
 @media screen and (max-width : 650px) {
+
+  h2{
+    font-size: 6.4rem;
+  }
+
+  .section01 h3,
+  .section02 .title p.small,
+  .section04 .title .text,
+  .section04 .title,
+  .section05 .title{
+    font-size: 2.8rem;
+  }
+
+  .section01 h3 span b,
+  .section02 .title p{
+    font-size: 4.2rem;
+  }
+
+  .section02 ul li,
+  .section03 ul li,
+  .section04 .inner-text,
+  .section04 .box ul{
+    font-size: 2rem;
+  }
 
   .section02::before {
     background: none;
@@ -1592,8 +1592,8 @@ h2 p.g-title {
   section {
     padding: 36px 0;
   }
-  
-  section.edge::after{
+
+  section.edge::after {
     width: 50px;
     height: 50px;
   }
@@ -1604,8 +1604,8 @@ h2 p.g-title {
 
   button,
   .btn {
-    font-size: 1.8rem;
-    padding: 12px 28px;
+    font-size: 2rem;
+    padding: 18px 0;
   }
 
   h2 {
@@ -1618,11 +1618,35 @@ h2 p.g-title {
   }
 
   .title {
-    font-size: 3.2rem;
+    font-size: 4.2rem;
+  }
+
+  .section01 .people-wrap .info ul li,
+  .section01 .schedule ul li,
+  .section03 ul li,
+  .section04 .inner-text,
+  .section04 .box ul,
+  .section05 .list ul li .flex,
+  .section05 .list ul.alert-wrap li{
+    font-size: 1.6rem;
+  }
+
+  .section04 .tag{
+    font-size: 1.4rem;
+  }
+
+  .section01 .copy img {
+    width: auto;
+    height: 10px;
   }
 
   .section01 .copy {
-    margin-bottom: 28px;
+    margin-bottom: 84px;
+    font-size: 2rem;
+  }
+
+  .section01 .people-wrap > li {
+    max-width: inherit;
     font-size: 1.4rem;
   }
 
@@ -1646,7 +1670,7 @@ h2 p.g-title {
   .section01 .people-wrap .info p {
     margin-bottom: 4px;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .section01 .people-wrap .info p small {
@@ -1654,8 +1678,7 @@ h2 p.g-title {
   }
 
   .section01 h3 {
-    margin: 28px 0;
-    margin-bottom: 12px;
+    margin: 54px 0;
     padding-top: 28px;
     font-size: 1.8rem;
 
@@ -1668,185 +1691,180 @@ h2 p.g-title {
     font-size: 3.2rem;
   }
 
-  .section01 .schedule{
+  .section01 .schedule {
     gap: 12px;
   }
 
-  .section01 .schedule > p{
+  .section01 .schedule > p {
     width: 100%;
     padding: 0;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 1.8rem;
     text-align: center;
   }
 
-  .section01 .schedule ul li div.time{
+  .section01 .schedule ul li div.time {
     width: auto;
   }
 
   .section01 .btn {
-    margin-bottom: 28px;
+    margin-bottom: 54px;
   }
 
-  .section02 .title p.small{
+  .section02 .title p.small {
     font-size: 1.4rem;
   }
 
-  .section02 .title p{
+  .section02 .title p {
     font-size: 2.4rem;
   }
 
-  .section02 ul li{
+  .section02 ul li {
     gap: 4px;
-    font-size: 1.6rem;
   }
 
-  .section02 ul li .thumb{
+  .section02 ul li .thumb {
     width: 36px;
     height: 36px;
   }
 
-  .section02 ul li .thumb img{
+  .section02 ul li .thumb img {
     width: 24px;
     height: 24px;
   }
 
-  .section03 .title{
+  .section03 .title {
     margin-bottom: 24px;
   }
 
-  .section03 .title p{
+  .section03 .title p {
     padding: 12px;
     padding-top: 22px;
     font-size: 1.8rem;
   }
 
-  .section03 ul li{
+  .section03 ul li {
     padding: 12px 0;
-    font-size: 1.6rem;
   }
 
   .section04 .title,
-  .section05 .title{
+  .section05 .title {
     gap: 8px;
   }
 
-  .section04 div.flex{
+  .section04 div.flex {
     gap: 4px;
   }
 
-  .section04 ul.flex > li{
+  .section04 ul.flex > li {
     padding: 12px;
   }
 
-  .section04 .part{
+  .section04 .part {
     font-size: 1.6rem;
   }
 
-  .section04 .tag{
+  .section04 .tag {
     margin-bottom: 4px;
   }
 
-  .section04 img{
+  .section04 img {
     width: 54px;
     height: 54px;
   }
 
-  .section04 .teacher-name{
+  .section04 .teacher-name {
     font-size: 1.3rem;
   }
 
-  .section04 div.flex{
+  .section04 div.flex {
     gap: 24px;
   }
 
-  .section04 .box ul li{
+  .section04 .box ul li {
     margin-bottom: 14px;
   }
 
   .section04 .box ul li,
-  .section04 .box ul li .time{
+  .section04 .box ul li .time {
     font-size: 1.4rem;
   }
 
-  .section04 .box ul li p.flex span{
+  .section04 .box ul li p.flex span {
     font-size: 1.3rem;
   }
 
-  .section04 div.flex{
+  .section04 div.flex {
     margin-bottom: 36px;
   }
 
-  .section04 .cta-info{
+  .section04 .cta-info {
     font-size: 1.4rem;
   }
 
-  .section05 .title{
+  .section05 .title {
     font-size: 1.8rem;
   }
 
-  .section05 .text p{
+  .section05 .text p {
     font-size: 1.4rem;
   }
 
-  .section05 .text p:first-child{
+  .section05 .text p:first-child {
     margin-bottom: 14px;
     font-size: 1.8rem;
   }
 
-  .section05 .logo-wrap .abs{
+  .section05 .logo-wrap .abs {
     top: 10px;
     height: 28px;
   }
 
-  .section05 .con:first-child{
+  .section05 .con:first-child {
     margin-bottom: 24px;
     padding-bottom: 24px;
   }
 
-  .section05 .list ul li .thumb{
+  .section05 .list ul li .thumb {
     width: 32px;
     height: 32px;
   }
 
-  .section05 .list ul li .thumb img{
+  .section05 .list ul li .thumb img {
     width: 28px;
     height: 28px;
   }
 
-  .section05 .list ul li{
-    font-size: 1.4rem;
-  }
-
-  .section05 .list ul li .flex{
+  .section05 .list ul li .flex {
     gap: 0;
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .section05 .list ul li .flex p{
+  .section05 .list ul li .flex p {
     font-size: 1.3rem;
     line-height: 1;
   }
 
-  .section06 .title p{
+  .section06 .title p {
     font-size: 1.8rem;
-    &:last-child{
+
+    &:last-child {
       font-size: 2.4rem;
     }
   }
 
-  .section07 .caption img{
+  .section07 .caption img {
     width: 16px;
     height: 16px;
   }
 
-  .section07 .caption{
+  .section07 .caption {
     font-size: 1.6rem;
   }
 
-  .section07 .caption + p{
+  .section07 .caption + p {
     font-size: 1.4rem;
   }
 }
