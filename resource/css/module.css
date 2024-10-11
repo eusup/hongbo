@@ -401,6 +401,7 @@ br.hidden{
 }
 
 .section01 .schedule {
+  position: relative;
   gap: 30px;
   max-width: 1280px;
   margin: 0 auto;
@@ -443,6 +444,20 @@ br.hidden{
   flex-shrink: 0;
   justify-content: space-between;
   width: 252px;
+}
+
+.section01 .schedule .parking{
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 36px;
+  right: 36px;
+  padding-left: 24px;
+  text-decoration: underline;
+  font-size: 2rem;
+  background-image: url(/resource/images/icn-parking.svg);
+  background-size: 22px;
+  background-position: center left;
+  opacity: 0.6;
 }
 
 .section02 {
@@ -1261,12 +1276,18 @@ br.hidden{
   .section01 .schedule {
     gap: 18px;
     padding: 18px;
+    padding-bottom: 58px;
     border-radius: 20px;
   }
 
   .section01 .schedule > p {
     padding-right: 18px;
     font-size: 2.8rem;
+  }
+
+  .section01 .schedule .parking{
+    bottom: 18px;
+    right: 18px;
   }
 
   .section02 .title {
@@ -1550,6 +1571,10 @@ br.hidden{
   .section01 .schedule > p {
     padding-right: inherit;
     border-right: none;
+  }
+
+  .section01 .schedule .parking{
+    font-size: 1.6rem;
   }
 
   .section01 .schedule ul li {
