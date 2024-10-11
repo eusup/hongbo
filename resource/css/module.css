@@ -454,7 +454,7 @@ br.hidden{
   padding-left: 24px;
   text-decoration: underline;
   font-size: 2rem;
-  background-image: url(/resource/images/icn-parking.svg);
+  background-image: url(../images/icn-parking.svg);
   background-size: 22px;
   background-position: center left;
   opacity: 0.6;
