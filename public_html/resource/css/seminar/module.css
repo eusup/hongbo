@@ -2186,6 +2186,10 @@ br.hidden {
     margin-bottom: 54px;
   }
 
+  .section01 .schedule ul li div.place span.red{
+    font-size: 1.4rem;
+  }
+
   .section02 .title p.small {
     font-size: 1.4rem;
   }
