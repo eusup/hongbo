@@ -3,7 +3,7 @@
   font-weight: 900;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-Black.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-Black.woff2) format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-weight: 800;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-ExtraBold.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-ExtraBold.woff2) format('woff2');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-Bold.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-Bold.woff2) format('woff2');
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-weight: 600;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-SemiBold.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-weight: 500;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-Medium.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-Medium.woff2) format('woff2');
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-Regular.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-Regular.woff2) format('woff2');
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   font-weight: 300;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-Light.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-Light.woff2) format('woff2');
 }
 
 @font-face {
@@ -59,7 +59,7 @@
   font-weight: 200;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-ExtraLight.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-ExtraLight.woff2) format('woff2');
 }
 
 @font-face {
@@ -67,7 +67,7 @@
   font-weight: 100;
   font-display: swap;
   src: local('※'),
-    url(../../font/Pretendard-Thin.woff2) format('woff2');
+    url(/public_html/resource/font/Pretendard-Thin.woff2) format('woff2');
 }
 
 @font-face {
@@ -75,7 +75,7 @@
   font-weight: 400;
   font-display: swap;
   src: local('※'),
-    url(../../font/Paperlogy-4Regular.ttf) format('truetype');
+    url(/public_html/resource/font/Paperlogy-4Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -83,7 +83,7 @@
   font-weight: 700;
   font-display: swap;
   src: local('※'),
-    url(../../font/Paperlogy-7Bold.ttf) format('truetype');
+    url(/public_html/resource/font/Paperlogy-7Bold.ttf) format('truetype');
 }
 
 * {
@@ -188,7 +188,7 @@ section {
     right: 0;
     width: 200px;
     height: 200px;
-    background-image: url(../../images/seminar/img-whiote-piece.svg);
+    background-image: url(/public_html/resource/images/seminar/img-whiote-piece.svg);
   }
 }
 
@@ -240,7 +240,7 @@ br.hidden {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../../images/seminar/bg.svg);
+    background-image: url(/public_html/resource/images/seminar/bg.svg);
     background-position: top;
     background-repeat: no-repeat;
     z-index: 0;
@@ -299,7 +299,7 @@ br.hidden {
     right: 100%;
     width: 160px;
     height: 160px;
-    background-image: url(../../images/seminar/line.svg);
+    background-image: url(/public_html/resource/images/seminar/line.svg);
   }
 
   &:last-child::before {
@@ -309,7 +309,7 @@ br.hidden {
     left: 100%;
     width: 160px;
     height: 160px;
-    background-image: url(../../images/seminar/line.svg);
+    background-image: url(/public_html/resource/images/seminar/line.svg);
   }
 }
 
@@ -427,6 +427,22 @@ br.hidden {
   display: flex;
   align-items: center;
   gap: 16px;
+
+  &.over{
+    position: relative;
+    display: inline-flex;
+  }
+
+  &.over::before{
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    width: calc(100% - 70px);
+    height: 4px;
+    background-color: #ff0000;
+  }
 }
 
 .section01 .schedule ul li div {
@@ -455,6 +471,7 @@ br.hidden {
     padding: 4px 12px;
     border-radius: 100px;
     background-color: #FF6868;
+    z-index: 2;
   }
 }
 
@@ -466,7 +483,7 @@ br.hidden {
   padding-left: 24px;
   text-decoration: underline;
   font-size: 2rem;
-  background-image: url(../../images/seminar/icn-parking.svg);
+  background-image: url(/public_html/resource/images/seminar/icn-parking.svg);
   background-size: 22px;
   background-position: center left;
   opacity: 0.6;
@@ -474,7 +491,7 @@ br.hidden {
 
 .section02 {
   position: relative;
-  background-image: url(../../images/seminar/section02-bg.png);
+  background-image: url(/public_html/resource/images/seminar/section02-bg.png);
   color: #ffffff;
 
   &::before {
@@ -579,7 +596,7 @@ br.hidden {
     left: 50%;
     width: 42px;
     height: 42px;
-    background-image: url(../../images/seminar/icn-check.svg);
+    background-image: url(/public_html/resource/images/seminar/icn-check.svg);
     background-position: center;
     background-size: 100%;
   }
@@ -810,7 +827,7 @@ br.hidden {
     left: 100px;
     width: 272px;
     height: 555px;
-    background-image: url(../../images/seminar/section4-5-bg01.png);
+    background-image: url(/public_html/resource/images/seminar/section4-5-bg01.png);
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -823,7 +840,7 @@ br.hidden {
     right: 100px;
     width: 418px;
     height: 546px;
-    background-image: url(../../images/seminar/section4-5-bg02.png);
+    background-image: url(/public_html/resource/images/seminar/section4-5-bg02.png);
     background-size: 100%;
     z-index: 1;
   }
@@ -861,7 +878,7 @@ br.hidden {
     left: 50%;
     width: 96px;
     height: 96px;
-    background-image: url(../../images/seminar/section04-icnTop.svg);
+    background-image: url(/public_html/resource/images/seminar/section04-icnTop.svg);
   }
 }
 
@@ -947,7 +964,7 @@ br.hidden {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 420px;
+  max-width: 360px;
 
   &::before {
     content: "1";
@@ -1945,11 +1962,20 @@ br.hidden {
     &:last-child {
       margin-bottom: 0;
     }
+
+    &.over::before{
+      display: none;
+    }
   }
 
   .section01 .schedule ul li div.pin,
   .section01 .schedule ul li div.time {
     width: auto;
+  }
+
+  .section01 .schedule ul li.over div span:not(.red),
+  .section01 .schedule ul li.over div b{
+    filter: brightness(0) saturate(100%) invert(66%) sepia(26%) saturate(5942%) hue-rotate(317deg) brightness(99%) contrast(108%) blur(2px);
   }
 
   .section03 .title p br {
@@ -2270,6 +2296,14 @@ br.hidden {
     border-radius: 0;
   }
 
+  .section04-5 .cover::before{
+    opacity: 0.6;
+  }
+
+  .section04-5 .cover::after{
+    opacity: 0.6;
+  }
+
   .section04-5 .con .title{
     margin-bottom: 12px;
     font-size: 3.2rem;
@@ -2293,6 +2327,10 @@ br.hidden {
     margin-bottom: 12px;
   }
 
+  .section04-5 .con .event-list li{
+    max-width: 280px;
+  }
+
   .section04-5 .con .event-list li::before{
     width: 36px;
     height: 36px;
@@ -2301,10 +2339,6 @@ br.hidden {
 
   .section04-5 .con .event-list li .text-wrap{
     font-size: 1.6rem;
-  }
-
-  .section04-5 .con .event-list li .text-wrap p:first-child br{
-    display: none;
   }
 
   .section04-5 .con .event-list li .text-wrap p:last-child{
