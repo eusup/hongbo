@@ -895,7 +895,7 @@ br.hidden {
   gap: 16px;
   width: auto;
   margin-bottom: 48px;
-  padding: 18px 30px;
+  padding: 18px 24px;
   border-radius: 100px;
   background-color: #FFE7EC;
   font-size: 2.8rem;
@@ -1010,6 +1010,7 @@ br.hidden {
   text-align: center;
   line-height: 1.2;
   box-shadow: 0px 0px 20px #FFCAD6;
+  word-break: keep-all;
 }
 
 .section04-5 .con .event-list li .text-wrap p:last-child {
@@ -1017,6 +1018,7 @@ br.hidden {
   font-size: 1.8rem;
   color: #A1A1A1;
   font-weight: 400;
+  word-break: keep-all;
 }
 
 .section05 {
@@ -1982,7 +1984,16 @@ br.hidden {
 
   .section01 .schedule ul li.over div span:not(.red),
   .section01 .schedule ul li.over div b{
-    filter: brightness(0) saturate(100%) invert(66%) sepia(26%) saturate(5942%) hue-rotate(317deg) brightness(99%) contrast(108%) blur(2px);
+    opacity: 0.4;
+  }
+
+  .section01 .schedule ul li.over div.time{
+    color: #ffffff !important;
+  }
+
+  .section01 .schedule ul li.over div.time b{
+    font-weight: 400;
+    opacity: 1;
   }
 
   .section03 .title p br {
