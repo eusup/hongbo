@@ -1189,6 +1189,15 @@ br.hidden {
   font-size: 1.8rem;
 }
 
+
+.section08{
+  padding: 36px;
+}
+
+.section08 .flex{
+  justify-content: center;
+}
+
 @media screen and (max-width : 1660px) {
   .con {
     padding: 0px 30px;
@@ -1999,6 +2008,18 @@ br.hidden {
   .section04-5 .con:last-child{
     padding: 0px 20px;
   }
+
+  .section08{
+    padding: 30px 15px;
+  }
+
+  .section08 .flex{
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .section08 .flex li{
+  }
 }
 
 @media screen and (max-width : 650px) {
@@ -2059,6 +2080,17 @@ br.hidden {
     font-size: 2rem;
   }
 
+  .section08 .flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .section08 .flex li{
+    width: calc((100% - 24px) / 2);
+    max-width: 180px;
+  }
 }
 
 @media screen and (max-width : 510px) {
